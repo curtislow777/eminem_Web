@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/20e6f7e818.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <img id="logo" class="right" src="images/Eminem-Logo-White.png" alt="Icon" height="404" width="674" />
+      <a href="contact.html">Contact</a>
+      <a href="discography.html">Discography</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+    </div>
+
+    <br>
+
+    <!-- contact page start -->
+    <div >
+      <div class="contact">
+        <div class="cont container">
+            <div class="contact-text">
+                <p>Contact Us</p>
+                <h6>Address</h6>
+                <p class="address">
+                  Eminem, Mom’s Spaghetti, 2131 Woodward Avenue, Detroit, MI 48201 USA
+                </p>
+
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+
+                    
+                    <input type="submit" value="Submit" onclick="openPopup()">
+
+                    <div class="popup" id="popup">
+                      <h2> Thank you</h2>
+                      <p>your message has been sent</p>
+                      <button type="button" onclick="closePopup()"> OKK </button>
+
+
+
+                    </div>
+
+               
+                    
+                </form>
+
+                
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+    <!--Footer Section-->
+  <footer class="footer-distributed">
+    <div class="footer-right">
+      <a href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR" target="_blank">
+        <i class="fa-brands fa-spotify"></i></a>
+      <a href="https://music.apple.com/us/artist/eminem/111051" target="_blank">
+        <i class="fa-brands fa-apple"></i></a>
+      <a href="https://www.youtube.com/@EminemVEVO/featured">
+        <i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/eminem/" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/Eminem" target="_blank">
+          <i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/eminem" target="_blank">
+          <i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <div class="footer-left">
+      <p>Stay up to date on all things Eminem by signing up for our mailing list.</p>
+      <input type="email" placeholder="Email Address" required>
+      <button type="submit">SUBSCRIBE</button>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500&family=Bebas+Neue&family=Bree+Serif&family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*navigation bar*/
+.navbar {
+  height: 70px;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+.navbar a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Logo */
+.navbar #logo {
+  height: 110%;
+  width: auto;
+  margin-top:-10px;
+}
+
+@media screen  and (max-width: 960px) {
+  .navbar {
+   display: flex;
+   justify-content: space-between;
+   height: 80px;
+   z-index: 1;
+   width: 100%;
+   max-width: 1300px;
+   padding: 0;
+  }
+}
+
+.parallax {
+  background-image: url("images/eminem1.jpg ");
+  min-height: 970px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*shop section*/
+
+.center-shop {
+  margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+} 
+.shop_title {
+  font-size: 40px;
+}
+
+/* shop image*/
+.shop_column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: auto; 
+}
+/* on hover */
+.shop_column img{
+  transition: opacity 0.4s;
+}
+.shop_column img:hover {
+  opacity: 0.4;
+}
+
+.product-title{
+  font-size: 20px;
+}
+
+.product-price{
+  font-style: italic; 
+}
+
+/* shop now button */
+.shop_button {
+  height: 150px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_all {
+background: white;
+color: black;
+border: 2px black;
+border-radius: 5px;
+transition: all 300ms;
+}
+
+.shop_all:hover {
+color: #494949;
+border: 2px solid #494949;
+border-radius: 50px;
+}
+
+body {
+  font-family: 'Bree Serif', serif;
+  margin: 0;
+  background-color: #13171c;
+  color: white;
+}
+
+/*footer*/
+.footer-distributed {
+  background-color: #292c2f;
+  width: 100%;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 50px;
+}
+
+/* icon settings */
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+      margin: 0;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 10px;
+      width: 100%;
+  }
+}
+
+
+/*newsletter buttone*/
+input {
+  width: 400px;
+  height: 45px;
+  border: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+button{
+  width: 140px;
+  height: 45px;
+  border: 4px;
+  color: white;
+  background-color: maroon;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+  .footer {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+  }
+} 
+
+
+video {
+  width: 100%;
+}
+.main-video {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+
+
+/* About Page */
+.mm-name {
+  text-align: center;
+  font-family: 'Anek Devanagari', sans-serif;
+  margin-bottom: 0.1em;
+  font-size: 4em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.mnm {
+  padding: 11em 0;
+  background-image: url('images/about.jpg');
+  background-size: cover;
+  margin-top: -20px;
+
+}
+
+/*about page column*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.associate{
+  margin-bottom: 50px;
+}
+
+.introduction-section > p,
+.associate > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.introduction-section,
+.associate {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.about-container p{
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+h2{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+@media only screen and (max-width: 571px) {
+    .mnm {
+        padding: 5em 0;
+    }
+    .mm-name {
+        font-size: 3em;
+    }
+
+    .container {
+        padding: 0 3em;
+    }
+  }
+
+/* Contact page */
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text p {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  font-weight: 800;
+}
+
+.contact-text h6,
+.contact-text .address{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form label {
+  font-size: 20px;  
+  padding: 10px 0px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  padding: 10px 0;
+  margin: 6px 0;
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+}
+
+.contact-form form input[type="submit"] {
+  margin: 16px 0;
+  width: 25%;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.contact-form form input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+.popup{
+  width:400px;
+  background: grey; 
+  border-radius: 6px;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;  
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+.popup h2{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 30px;
+
+}
+
+.popup button{
+  width:100%;
+  margin-top: 50px ;
+  padding: 10px 0;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* -======= Media Queriers =====- */
+
+@media (max-width: 500px) {
+  .cont {
+      display: block;
+      flex-direction: column;
+  }
+  .contact {
+      padding-top: 0;
+  }
+  .cont .contact-form form input,
+  .cont .contact-form form textarea {
+      width: 100%;
+  }
+  .cont .contact-form form input[type="submit"] {
+      width: 23%;
+      font-size: var(--small-font-size);
+  }
+  .contact-text p {
+      margin-right: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .cont {
+      display: block;
+      flex-direction: column;
+  }
+  .contact {
+      padding-top: 0;
+  }
+  .cont .contact-form form input,
+  .cont .contact-form form textarea {
+      width: 100%;
+  }
+  .cont .contact-form form input[type="submit"] {
+      width: 23%;
+      font-size: var(--small-font-size);
+  }
+}
+
+/* Discography page */
+.container2{
+  display: flex;
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;  
+}
+
+.album p{
+  margin-top: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.album:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+} 
+
+.column1{ 
+  margin-left: 0px;
+}
