@@ -1,6 +1,6 @@
 # Your Project's Name
 
-My project is about an music artist called m&m. I created this website as I am a fan of his music and would like to
+My project is about an music artist called Eminem. I created this website as I am a fan of his music and would like to
 share more about him and his music with other listeners. I feel inspired after learning about his story from how he
 was an underclass and minority in rap and his struggles in life.
 
